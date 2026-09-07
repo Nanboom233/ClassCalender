@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+cookies.json
+calendar.ics
+calendar.ics.tmp
+/credentials.json
+/token.json
+/docs/example_output.json

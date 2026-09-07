@@ -1,0 +1,2757 @@
+{
+    "datas": {},
+    "models": [
+        {
+            "name": "xskcb",
+            "modelName": "Xskb",
+            "appName": "wdkb",
+            "url": "xskcb\/xskcb.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "JXBID",
+                    "dataType": "String",
+                    "caption": "排课班号"
+                },
+                {
+                    "name": "XKWZSM",
+                    "dataType": "String",
+                    "caption": "上课说明",
+                    "grid.width": "500"
+                },
+                {
+                    "name": "SKJS",
+                    "dataType": "String",
+                    "caption": "任课教师"
+                },
+                {
+                    "name": "KCM",
+                    "dataType": "String",
+                    "caption": "课程名称",
+                    "quickSearch": true
+                },
+                {
+                    "name": "KCH",
+                    "dataType": "String",
+                    "caption": "课程编号",
+                    "quickSearch": true
+                },
+                {
+                    "name": "XF",
+                    "dataType": "double",
+                    "caption": "学分"
+                },
+                {
+                    "name": "XS",
+                    "dataType": "String",
+                    "caption": "学时"
+                },
+                {
+                    "name": "SKSJ",
+                    "dataType": "String",
+                    "caption": "授课时间"
+                },
+                {
+                    "name": "JASMC",
+                    "dataType": "String",
+                    "caption": "授课地点",
+                    "grid.width": "120px"
+                },
+                {
+                    "name": "XKZRS",
+                    "dataType": "String",
+                    "caption": "选课人数"
+                },
+                {
+                    "name": "JXFSDM",
+                    "dataType": "String",
+                    "caption": "教学形式",
+                    "url": "\/jwapp\/code\/482feb7a-338e-42d3-a016-e60f36e482b4.do",
+                    "search.xtype": "multi-select2",
+                    "xtype": "select"
+                },
+                {
+                    "name": "JXFSSM",
+                    "dataType": "String",
+                    "caption": "教学形式说明"
+                },
+                {
+                    "name": "DWDM",
+                    "dataType": "String",
+                    "caption": "院系",
+                    "url": "\/jwapp\/code\/49a86828-aef9-4a48-b26f-01149dac72d7.do",
+                    "search.xtype": "multi-select2",
+                    "xtype": "select"
+                },
+                {
+                    "name": "ZYDM",
+                    "dataType": "String",
+                    "caption": "专业",
+                    "url": "\/jwapp\/code\/87a9226a-6e44-44cc-9743-c081a8f9cb9b.do",
+                    "search.xtype": "multi-select2",
+                    "xtype": "select"
+                },
+                {
+                    "name": "NJDM",
+                    "dataType": "String",
+                    "caption": "年级",
+                    "url": "\/jwapp\/code\/8ab8b5e7-c457-4f11-bfda-cf6e97a83526.do",
+                    "search.xtype": "multi-select2",
+                    "xtype": "select"
+                },
+                {
+                    "name": "BZ",
+                    "dataType": "String",
+                    "caption": "备注"
+                },
+                {
+                    "name": "KXH",
+                    "dataType": "String",
+                    "caption": "课序号",
+                    "quickSearch": true,
+                    "grid.width": "75px",
+                    "hidden": true
+                },
+                {
+                    "name": "KKDWDM",
+                    "dataType": "String",
+                    "caption": "开课单位",
+                    "quickSearch": true,
+                    "url": "\/jwapp\/code\/44e02e19-e31b-4916-91b2-0a04380cbd3a.do",
+                    "search.xtype": "select",
+                    "xtype": "select",
+                    "hidden": true
+                },
+                {
+                    "name": "ZCMC",
+                    "dataType": "String",
+                    "caption": "上课周次",
+                    "hidden": true
+                },
+                {
+                    "name": "SKXQ",
+                    "dataType": "String",
+                    "caption": "上课星期",
+                    "search.xtype": "number",
+                    "xtype": "number",
+                    "grid.width": "90px",
+                    "hidden": true
+                },
+                {
+                    "name": "KSJC",
+                    "dataType": "String",
+                    "caption": "开始节次",
+                    "search.xtype": "number",
+                    "xtype": "number",
+                    "grid.width": "90px",
+                    "hidden": true
+                },
+                {
+                    "name": "JSJC",
+                    "dataType": "String",
+                    "caption": "结束节次",
+                    "search.xtype": "number",
+                    "xtype": "number",
+                    "grid.width": "90px",
+                    "hidden": true
+                },
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true,
+                    "form.hidden": true
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "SKZC",
+                    "dataType": "String",
+                    "caption": "上课周次",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "JXBMC",
+                    "dataType": "String",
+                    "caption": "教学班名称",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "XXXQDM",
+                    "dataType": "String",
+                    "caption": "学校校区代码",
+                    "xtype": "select",
+                    "hidden": true,
+                    "search.hidden": true,
+                    "url": "\/jwapp\/code\/83a986fc-e677-400e-99a4-c7bb39c2ca35.do",
+                    "search.xtype": "multi-select2",
+                    "grid.hidden": true,
+                    "grid.fixed": true
+                },
+                {
+                    "name": "JASDM",
+                    "dataType": "String",
+                    "caption": "教室代码",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "JXLDM",
+                    "dataType": "String",
+                    "caption": "教学楼代码",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String",
+                    "caption": "学号",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "PKZTDM",
+                    "dataType": "String",
+                    "caption": "排课状态代码",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "XM",
+                    "dataType": "String",
+                    "caption": "姓名",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "ISTK",
+                    "dataType": "int",
+                    "caption": "是否调课",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "YPSJDD",
+                    "dataType": "String",
+                    "caption": "已排时间地点",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "XNXQDM",
+                    "dataType": "String",
+                    "caption": "学年学期代码",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String",
+                    "caption": "班级代码",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "KBID",
+                    "dataType": "String",
+                    "caption": "课表ID",
+                    "search.hidden": true,
+                    "grid.hidden": true,
+                    "grid.fixed": true,
+                    "hidden": true
+                },
+                {
+                    "name": "XDLX",
+                    "dataType": "String",
+                    "caption": "是否主修",
+                    "url": "\/jwapp\/code\/9790c63e-6cbf-4c4b-9a18-ac47d02b2f74.do",
+                    "search.xtype": "select",
+                    "xtype": "select"
+                },
+                {
+                    "name": "SKKSSJ",
+                    "dataType": "String",
+                    "caption": "上课开始时间"
+                },
+                {
+                    "name": "SKJSSJ",
+                    "dataType": "String",
+                    "caption": "上课结束时间"
+                },
+                {
+                    "name": "SKJC",
+                    "dataType": "String",
+                    "caption": "上课节次"
+                },
+                {
+                    "name": "FJ",
+                    "dataType": "String",
+                    "grid.hidden": true,
+                    "hidden": true,
+                    "form.hidden": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "JXBID",
+                    "dataType": "String",
+                    "caption": "排课班号"
+                },
+                {
+                    "name": "XKWZSM",
+                    "dataType": "String",
+                    "caption": "上课说明"
+                },
+                {
+                    "name": "SKJS",
+                    "dataType": "String",
+                    "caption": "任课教师"
+                },
+                {
+                    "name": "KCM",
+                    "dataType": "String",
+                    "caption": "课程名称"
+                },
+                {
+                    "name": "KCH",
+                    "dataType": "String",
+                    "caption": "课程编号"
+                },
+                {
+                    "name": "XF",
+                    "dataType": "double",
+                    "caption": "学分"
+                },
+                {
+                    "name": "XS",
+                    "dataType": "String",
+                    "caption": "学时"
+                },
+                {
+                    "name": "SKSJ",
+                    "dataType": "String",
+                    "caption": "授课时间"
+                },
+                {
+                    "name": "JASMC",
+                    "dataType": "String",
+                    "caption": "授课地点"
+                },
+                {
+                    "name": "XKZRS",
+                    "dataType": "String",
+                    "caption": "选课人数"
+                },
+                {
+                    "name": "JXFSDM",
+                    "dataType": "String",
+                    "caption": "教学形式"
+                },
+                {
+                    "name": "JXFSSM",
+                    "dataType": "String",
+                    "caption": "教学形式说明"
+                },
+                {
+                    "name": "DWDM",
+                    "dataType": "String",
+                    "caption": "院系"
+                },
+                {
+                    "name": "ZYDM",
+                    "dataType": "String",
+                    "caption": "专业"
+                },
+                {
+                    "name": "NJDM",
+                    "dataType": "String",
+                    "caption": "年级"
+                },
+                {
+                    "name": "BZ",
+                    "dataType": "String",
+                    "caption": "备注"
+                },
+                {
+                    "name": "KXH",
+                    "dataType": "String",
+                    "caption": "课序号"
+                },
+                {
+                    "name": "KKDWDM",
+                    "dataType": "String",
+                    "caption": "开课单位"
+                },
+                {
+                    "name": "ZCMC",
+                    "dataType": "String",
+                    "caption": "上课周次"
+                },
+                {
+                    "name": "SKXQ",
+                    "dataType": "String",
+                    "caption": "上课星期"
+                },
+                {
+                    "name": "KSJC",
+                    "dataType": "String",
+                    "caption": "开始节次"
+                },
+                {
+                    "name": "JSJC",
+                    "dataType": "String",
+                    "caption": "结束节次"
+                },
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "SKZC",
+                    "dataType": "String",
+                    "caption": "上课周次"
+                },
+                {
+                    "name": "JXBMC",
+                    "dataType": "String",
+                    "caption": "教学班名称"
+                },
+                {
+                    "name": "XXXQDM",
+                    "dataType": "String",
+                    "caption": "学校校区代码"
+                },
+                {
+                    "name": "JASDM",
+                    "dataType": "String",
+                    "caption": "教室代码"
+                },
+                {
+                    "name": "JXLDM",
+                    "dataType": "String",
+                    "caption": "教学楼代码"
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String",
+                    "caption": "学号"
+                },
+                {
+                    "name": "PKZTDM",
+                    "dataType": "String",
+                    "caption": "排课状态代码"
+                },
+                {
+                    "name": "XM",
+                    "dataType": "String",
+                    "caption": "姓名"
+                },
+                {
+                    "name": "ISTK",
+                    "dataType": "int",
+                    "caption": "是否调课"
+                },
+                {
+                    "name": "YPSJDD",
+                    "dataType": "String",
+                    "caption": "已排时间地点"
+                },
+                {
+                    "name": "XNXQDM",
+                    "dataType": "String",
+                    "caption": "学年学期代码"
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String",
+                    "caption": "班级代码"
+                },
+                {
+                    "name": "KBID",
+                    "dataType": "String",
+                    "caption": "课表ID"
+                },
+                {
+                    "name": "XDLX",
+                    "dataType": "String",
+                    "caption": "是否主修"
+                },
+                {
+                    "name": "SKKSSJ",
+                    "dataType": "String",
+                    "caption": "上课开始时间"
+                },
+                {
+                    "name": "SKJSSJ",
+                    "dataType": "String",
+                    "caption": "上课结束时间"
+                },
+                {
+                    "name": "SKJC",
+                    "dataType": "String",
+                    "caption": "上课节次"
+                },
+                {
+                    "name": "FJ",
+                    "dataType": "String"
+                }
+            ]
+        },
+        {
+            "name": "cxxljc",
+            "modelName": "SchoolCalendar",
+            "appName": "jwpubapp",
+            "url": "xskcb\/cxxljc.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "XQ",
+                    "dataType": "String",
+                    "caption": "学期"
+                },
+                {
+                    "name": "XN",
+                    "dataType": "String",
+                    "caption": "学年"
+                },
+                {
+                    "name": "SFSY",
+                    "dataType": "int",
+                    "caption": "是否使用"
+                },
+                {
+                    "name": "XNMC",
+                    "dataType": "String",
+                    "caption": "学年名称"
+                },
+                {
+                    "name": "XQMC",
+                    "dataType": "String",
+                    "caption": "学期名称"
+                },
+                {
+                    "name": "SFJJ",
+                    "dataType": "int",
+                    "caption": "上午几节"
+                },
+                {
+                    "name": "XQKSRQ",
+                    "dataType": "Timestamp",
+                    "caption": "学期开始日期"
+                },
+                {
+                    "name": "XSLBMC",
+                    "dataType": "String",
+                    "caption": "学生类别名称"
+                },
+                {
+                    "name": "WSJJ",
+                    "dataType": "int",
+                    "caption": "晚上几节"
+                },
+                {
+                    "name": "XXXQ",
+                    "dataType": "String",
+                    "caption": "学校校区"
+                },
+                {
+                    "name": "XFJJ",
+                    "dataType": "int",
+                    "caption": "下午几节"
+                },
+                {
+                    "name": "XSLBDM",
+                    "dataType": "String",
+                    "caption": "学生类别"
+                },
+                {
+                    "name": "PX",
+                    "dataType": "int",
+                    "caption": "排序"
+                },
+                {
+                    "name": "ZZC",
+                    "dataType": "int",
+                    "caption": "总周次"
+                },
+                {
+                    "name": "ZJXZC",
+                    "dataType": "int",
+                    "caption": "总教学周次"
+                }
+            ],
+            "params": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "XQ",
+                    "dataType": "String",
+                    "caption": "学期"
+                },
+                {
+                    "name": "XN",
+                    "dataType": "String",
+                    "caption": "学年"
+                },
+                {
+                    "name": "SFSY",
+                    "dataType": "int",
+                    "caption": "是否使用"
+                },
+                {
+                    "name": "XNMC",
+                    "dataType": "String",
+                    "caption": "学年名称"
+                },
+                {
+                    "name": "XQMC",
+                    "dataType": "String",
+                    "caption": "学期名称"
+                },
+                {
+                    "name": "SFJJ",
+                    "dataType": "int",
+                    "caption": "上午几节"
+                },
+                {
+                    "name": "XQKSRQ",
+                    "dataType": "Timestamp",
+                    "caption": "学期开始日期"
+                },
+                {
+                    "name": "XSLBMC",
+                    "dataType": "String",
+                    "caption": "学生类别名称"
+                },
+                {
+                    "name": "WSJJ",
+                    "dataType": "int",
+                    "caption": "晚上几节"
+                },
+                {
+                    "name": "XXXQ",
+                    "dataType": "String",
+                    "caption": "学校校区"
+                },
+                {
+                    "name": "XFJJ",
+                    "dataType": "int",
+                    "caption": "下午几节"
+                },
+                {
+                    "name": "XSLBDM",
+                    "dataType": "String",
+                    "caption": "学生类别"
+                },
+                {
+                    "name": "PX",
+                    "dataType": "int",
+                    "caption": "排序"
+                },
+                {
+                    "name": "ZZC",
+                    "dataType": "int",
+                    "caption": "总周次"
+                },
+                {
+                    "name": "ZJXZC",
+                    "dataType": "int",
+                    "caption": "总教学周次"
+                }
+            ]
+        },
+        {
+            "name": "ggzd",
+            "modelName": "Dictionary",
+            "appName": "wdkb",
+            "url": "xskcb\/ggzd.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "WZMC",
+                    "dataType": "String",
+                    "caption": "完整名称,如果有父节点，则会把父节点的名称也加上"
+                },
+                {
+                    "name": "LS",
+                    "dataType": "String",
+                    "caption": "隶属"
+                },
+                {
+                    "name": "DM",
+                    "dataType": "String",
+                    "caption": "代码"
+                },
+                {
+                    "name": "CC",
+                    "dataType": "String",
+                    "caption": "层次"
+                },
+                {
+                    "name": "WZYWMC",
+                    "dataType": "String",
+                    "caption": "完整英文名称"
+                },
+                {
+                    "name": "MC",
+                    "dataType": "String",
+                    "caption": "名称"
+                },
+                {
+                    "name": "PX",
+                    "dataType": "int",
+                    "caption": "排序"
+                },
+                {
+                    "name": "SFSY",
+                    "dataType": "int",
+                    "caption": "是否使用"
+                },
+                {
+                    "name": "YWMC",
+                    "dataType": "String",
+                    "caption": "英文名称"
+                }
+            ]
+        },
+        {
+            "name": "cxxsjbxx",
+            "modelName": "Student",
+            "appName": "wdkb",
+            "url": "xskcb\/cxxsjbxx.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "JKZKDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GJDQMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZYDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XYZJDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GATQDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "KSH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZXYZBM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "MZDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SFZJH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XZNJMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZYMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKSZDMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TGYXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SFZJLXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SYDMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTYB",
+                    "dataType": "String"
+                },
+                {
+                    "name": "PYFSMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XBMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKSZD",
+                    "dataType": "String"
+                },
+                {
+                    "name": "MZMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TZSH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "WXH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XSLBMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YXDM",
+                    "dataType": "String",
+                    "url": "\/jwapp\/code\/49a86828-aef9-4a48-b26f-01149dac72d7.do",
+                    "xtype": "select"
+                },
+                {
+                    "name": "RXQDW",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XXDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YKTKH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YHZH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XSBH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TGYXDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TZ",
+                    "dataType": "double"
+                },
+                {
+                    "name": "SFZJLXDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "queryopt",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKXZDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZZMMDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XBDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "RXNY",
+                    "dataType": "String"
+                },
+                {
+                    "name": "RXFSDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKXZMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "LXDH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SJH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "KSLBDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZSDZ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "CSRQ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HYZKDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GJDQDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HYZKMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "PYCCDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YHH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTDZ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "DZXX",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SJBYRQ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZXTXDZ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "CSDMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SG",
+                    "dataType": "double"
+                },
+                {
+                    "name": "CSDDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JKZKMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "PYFSDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XYZJMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XJZTDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZZMMMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "QQH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "BJMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SYDDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GATQMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XSLBDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YJBYRQ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XZNJ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTDZQH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTDH",
+                    "dataType": "String"
+                }
+            ],
+            "params": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "JKZKDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GJDQMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZYDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XYZJDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GATQDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "KSH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZXYZBM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "MZDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SFZJH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XZNJMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZYMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKSZDMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TGYXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SFZJLXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SYDMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTYB",
+                    "dataType": "String"
+                },
+                {
+                    "name": "PYFSMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XBMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKSZD",
+                    "dataType": "String"
+                },
+                {
+                    "name": "MZMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TZSH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "WXH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XSLBMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YXDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "RXQDW",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XXDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YKTKH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YHZH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XSBH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TGYXDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TZ",
+                    "dataType": "double"
+                },
+                {
+                    "name": "SFZJLXDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "queryopt",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKXZDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZZMMDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XBDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "RXNY",
+                    "dataType": "String"
+                },
+                {
+                    "name": "RXFSDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HKXZMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "LXDH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SJH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "KSLBDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZSDZ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "CSRQ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HYZKDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GJDQDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "HYZKMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "PYCCDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YHH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTDZ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YXMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "DZXX",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SJBYRQ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "TC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZXTXDZ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "CSDMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SG",
+                    "dataType": "double"
+                },
+                {
+                    "name": "CSDDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JKZKMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "PYFSDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XYZJMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XJZTDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "ZZMMMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "QQH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "BJMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SYDDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "GATQMC",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XSLBDM",
+                    "dataType": "String"
+                },
+                {
+                    "name": "YJBYRQ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XZNJ",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTDZQH",
+                    "dataType": "String"
+                },
+                {
+                    "name": "JTDH",
+                    "dataType": "String"
+                }
+            ]
+        },
+        {
+            "name": "xswpkc",
+            "modelName": "RwWpk",
+            "appName": "wdkb",
+            "url": "xskcb\/xswpkc.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "KKDWDM",
+                    "dataType": "String",
+                    "caption": "开课单位代码"
+                },
+                {
+                    "name": "XS",
+                    "dataType": "int",
+                    "caption": "学时"
+                },
+                {
+                    "name": "KXH",
+                    "dataType": "String",
+                    "caption": "课序号"
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String",
+                    "caption": "学号"
+                },
+                {
+                    "name": "SKZC",
+                    "dataType": "String",
+                    "caption": "上课周次"
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String",
+                    "caption": "班级代码"
+                },
+                {
+                    "name": "JSH",
+                    "dataType": "String",
+                    "caption": "教师号"
+                },
+                {
+                    "name": "SKJS",
+                    "dataType": "String",
+                    "caption": "上课教师"
+                },
+                {
+                    "name": "XF",
+                    "dataType": "int",
+                    "caption": "学分"
+                },
+                {
+                    "name": "XNXQDM",
+                    "dataType": "String",
+                    "caption": "学年学期代码"
+                },
+                {
+                    "name": "KCM",
+                    "dataType": "String",
+                    "caption": "课程名"
+                },
+                {
+                    "name": "JXBID",
+                    "dataType": "String",
+                    "caption": "教学班id"
+                },
+                {
+                    "name": "KCH",
+                    "dataType": "String",
+                    "caption": "课程号"
+                }
+            ],
+            "params": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "KKDWDM",
+                    "dataType": "String",
+                    "caption": "开课单位代码"
+                },
+                {
+                    "name": "XS",
+                    "dataType": "int",
+                    "caption": "学时"
+                },
+                {
+                    "name": "KXH",
+                    "dataType": "String",
+                    "caption": "课序号"
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String",
+                    "caption": "学号"
+                },
+                {
+                    "name": "SKZC",
+                    "dataType": "String",
+                    "caption": "上课周次"
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String",
+                    "caption": "班级代码"
+                },
+                {
+                    "name": "JSH",
+                    "dataType": "String",
+                    "caption": "教师号"
+                },
+                {
+                    "name": "SKJS",
+                    "dataType": "String",
+                    "caption": "上课教师"
+                },
+                {
+                    "name": "XF",
+                    "dataType": "int",
+                    "caption": "学分"
+                },
+                {
+                    "name": "XNXQDM",
+                    "dataType": "String",
+                    "caption": "学年学期代码"
+                },
+                {
+                    "name": "KCM",
+                    "dataType": "String",
+                    "caption": "课程名"
+                },
+                {
+                    "name": "JXBID",
+                    "dataType": "String",
+                    "caption": "教学班id"
+                },
+                {
+                    "name": "KCH",
+                    "dataType": "String",
+                    "caption": "课程号"
+                }
+            ]
+        },
+        {
+            "name": "bbqxxr",
+            "modelName": "BaseBean_FR",
+            "appName": "jwpubapp",
+            "url": "xskcb\/bbqxxr.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                }
+            ],
+            "params": [
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "FILTERZD",
+                    "dataType": "String",
+                    "caption": "过滤字段"
+                },
+                {
+                    "name": "QUERYID",
+                    "dataType": "String",
+                    "caption": "查询ID"
+                },
+                {
+                    "name": "USERID",
+                    "dataType": "String",
+                    "caption": "操作人"
+                },
+                {
+                    "name": "TYPE",
+                    "dataType": "String",
+                    "caption": "备注"
+                }
+            ]
+        },
+        {
+            "name": "xsdkkc",
+            "modelName": "Tkjg",
+            "appName": "wdkb",
+            "url": "xskcb\/xsdkkc.do",
+            "type": "list",
+            "controls": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "XS",
+                    "dataType": "int",
+                    "caption": "学时"
+                },
+                {
+                    "name": "JSJC",
+                    "dataType": "int",
+                    "caption": "结束节次"
+                },
+                {
+                    "name": "XSKZC",
+                    "dataType": "String",
+                    "caption": "新上课周次"
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String",
+                    "caption": "学号"
+                },
+                {
+                    "name": "KSJC",
+                    "dataType": "int",
+                    "caption": "开始节次"
+                },
+                {
+                    "name": "SKZC",
+                    "dataType": "String",
+                    "caption": "上课周次"
+                },
+                {
+                    "name": "JSH",
+                    "dataType": "String",
+                    "caption": "教师号"
+                },
+                {
+                    "name": "XF",
+                    "dataType": "int",
+                    "caption": "学分"
+                },
+                {
+                    "name": "SKXQ",
+                    "dataType": "int",
+                    "caption": "上课星期"
+                },
+                {
+                    "name": "XNXQDM",
+                    "dataType": "String",
+                    "caption": "学年学期代码"
+                },
+                {
+                    "name": "JXBID",
+                    "dataType": "String",
+                    "caption": "教学班id"
+                },
+                {
+                    "name": "KKDWDM",
+                    "dataType": "String",
+                    "caption": "开课单位代码"
+                },
+                {
+                    "name": "XJSJC",
+                    "dataType": "int",
+                    "caption": "新结束节次"
+                },
+                {
+                    "name": "JASLXDM",
+                    "dataType": "String",
+                    "caption": "教室类型代码"
+                },
+                {
+                    "name": "XJASLXDM",
+                    "dataType": "String",
+                    "caption": "新教室类型代码"
+                },
+                {
+                    "name": "KXH",
+                    "dataType": "String",
+                    "caption": "课序号"
+                },
+                {
+                    "name": "XJASDM",
+                    "dataType": "String",
+                    "caption": "新教室代码"
+                },
+                {
+                    "name": "XZCMC",
+                    "dataType": "String",
+                    "caption": "新周次名称"
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String",
+                    "caption": "班级代码"
+                },
+                {
+                    "name": "XSKXQ",
+                    "dataType": "int",
+                    "caption": "新上课星期"
+                },
+                {
+                    "name": "ZCMC",
+                    "dataType": "String",
+                    "caption": "周次名称"
+                },
+                {
+                    "name": "XJSH",
+                    "dataType": "String",
+                    "caption": "新教师号"
+                },
+                {
+                    "name": "XKSJC",
+                    "dataType": "int",
+                    "caption": "新开始节次"
+                },
+                {
+                    "name": "KCM",
+                    "dataType": "String",
+                    "caption": "课程名"
+                },
+                {
+                    "name": "JASDM",
+                    "dataType": "String",
+                    "caption": "教室代码"
+                },
+                {
+                    "name": "KCH",
+                    "dataType": "String",
+                    "caption": "课程号"
+                },
+                {
+                    "name": "TKLXDM",
+                    "dataType": "String",
+                    "caption": "调课类型"
+                },
+                {
+                    "name": "YSKJS",
+                    "dataType": "String",
+                    "hidden": true
+                },
+                {
+                    "name": "XSKJS",
+                    "dataType": "String",
+                    "hidden": true
+                },
+                {
+                    "name": "XJASMC",
+                    "dataType": "String",
+                    "caption": "新教室名称"
+                },
+                {
+                    "name": "KBID",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SQSJ",
+                    "dataType": "Timestamp",
+                    "caption": "申请时间"
+                },
+                {
+                    "name": "JASMC",
+                    "dataType": "String",
+                    "caption": "教室名称"
+                }
+            ],
+            "params": [
+                {
+                    "name": "BY6",
+                    "dataType": "String",
+                    "caption": "备用6"
+                },
+                {
+                    "name": "BY5",
+                    "dataType": "String",
+                    "caption": "备用5"
+                },
+                {
+                    "name": "BY4",
+                    "dataType": "String",
+                    "caption": "备用4"
+                },
+                {
+                    "name": "BY3",
+                    "dataType": "String",
+                    "caption": "备用3"
+                },
+                {
+                    "name": "WID",
+                    "dataType": "String",
+                    "caption": "数据的唯一标识"
+                },
+                {
+                    "name": "BY2",
+                    "dataType": "String",
+                    "caption": "备用2"
+                },
+                {
+                    "name": "BY1",
+                    "dataType": "String",
+                    "caption": "备用1"
+                },
+                {
+                    "name": "BY7",
+                    "dataType": "String",
+                    "caption": "备用7"
+                },
+                {
+                    "name": "BY8",
+                    "dataType": "String",
+                    "caption": "备用8"
+                },
+                {
+                    "name": "BY9",
+                    "dataType": "String",
+                    "caption": "备用9"
+                },
+                {
+                    "name": "RZLBDM",
+                    "dataType": "String",
+                    "caption": "任职类别代码，有的接口需要作为数据权限过滤的依据"
+                },
+                {
+                    "name": "ORDERFILTER",
+                    "dataType": "String",
+                    "caption": "接口被字典使用时需要使用这个字段传入排序方式，比如+PX,-WID等"
+                },
+                {
+                    "name": "BY10",
+                    "dataType": "String",
+                    "caption": "备用10"
+                },
+                {
+                    "name": "XS",
+                    "dataType": "int",
+                    "caption": "学时"
+                },
+                {
+                    "name": "JSJC",
+                    "dataType": "int",
+                    "caption": "结束节次"
+                },
+                {
+                    "name": "XSKZC",
+                    "dataType": "String",
+                    "caption": "新上课周次"
+                },
+                {
+                    "name": "XH",
+                    "dataType": "String",
+                    "caption": "学号"
+                },
+                {
+                    "name": "KSJC",
+                    "dataType": "int",
+                    "caption": "开始节次"
+                },
+                {
+                    "name": "SKZC",
+                    "dataType": "String",
+                    "caption": "上课周次"
+                },
+                {
+                    "name": "JSH",
+                    "dataType": "String",
+                    "caption": "教师号"
+                },
+                {
+                    "name": "XF",
+                    "dataType": "int",
+                    "caption": "学分"
+                },
+                {
+                    "name": "SKXQ",
+                    "dataType": "int",
+                    "caption": "上课星期"
+                },
+                {
+                    "name": "XNXQDM",
+                    "dataType": "String",
+                    "caption": "学年学期代码"
+                },
+                {
+                    "name": "JXBID",
+                    "dataType": "String",
+                    "caption": "教学班id"
+                },
+                {
+                    "name": "KKDWDM",
+                    "dataType": "String",
+                    "caption": "开课单位代码"
+                },
+                {
+                    "name": "XJSJC",
+                    "dataType": "int",
+                    "caption": "新结束节次"
+                },
+                {
+                    "name": "JASLXDM",
+                    "dataType": "String",
+                    "caption": "教室类型代码"
+                },
+                {
+                    "name": "XJASLXDM",
+                    "dataType": "String",
+                    "caption": "新教室类型代码"
+                },
+                {
+                    "name": "KXH",
+                    "dataType": "String",
+                    "caption": "课序号"
+                },
+                {
+                    "name": "XJASDM",
+                    "dataType": "String",
+                    "caption": "新教室代码"
+                },
+                {
+                    "name": "XZCMC",
+                    "dataType": "String",
+                    "caption": "新周次名称"
+                },
+                {
+                    "name": "BJDM",
+                    "dataType": "String",
+                    "caption": "班级代码"
+                },
+                {
+                    "name": "XSKXQ",
+                    "dataType": "int",
+                    "caption": "新上课星期"
+                },
+                {
+                    "name": "ZCMC",
+                    "dataType": "String",
+                    "caption": "周次名称"
+                },
+                {
+                    "name": "XJSH",
+                    "dataType": "String",
+                    "caption": "新教师号"
+                },
+                {
+                    "name": "XKSJC",
+                    "dataType": "int",
+                    "caption": "新开始节次"
+                },
+                {
+                    "name": "KCM",
+                    "dataType": "String",
+                    "caption": "课程名"
+                },
+                {
+                    "name": "JASDM",
+                    "dataType": "String",
+                    "caption": "教室代码"
+                },
+                {
+                    "name": "KCH",
+                    "dataType": "String",
+                    "caption": "课程号"
+                },
+                {
+                    "name": "TKLXDM",
+                    "dataType": "String",
+                    "caption": "调课类型"
+                },
+                {
+                    "name": "YSKJS",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XSKJS",
+                    "dataType": "String"
+                },
+                {
+                    "name": "XJASMC",
+                    "dataType": "String",
+                    "caption": "新教室名称"
+                },
+                {
+                    "name": "KBID",
+                    "dataType": "String"
+                },
+                {
+                    "name": "SQSJ",
+                    "dataType": "Timestamp",
+                    "caption": "申请时间"
+                },
+                {
+                    "name": "JASMC",
+                    "dataType": "String",
+                    "caption": "教室名称"
+                }
+            ]
+        }
+    ],
+    "routes": {},
+    "code": "0"
+}
